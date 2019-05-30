@@ -139,9 +139,6 @@ class Blowfish:
         self.blocks = self.set_blocks(self.plaintext)
         self.set_key()
 
-        encrypted_block = self.encrypt_block(self.blocks[0])
-        encrypted_block = self.encrypt_block(self.blocks[0])
-
     # Currently uses CBC mode
     def encrypt(self, pt, IV = None):
         if not IV:

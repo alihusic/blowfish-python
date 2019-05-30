@@ -7,12 +7,14 @@
 # print(cyphertext)
 # plaintext = blowfish.decrypt(cyphertext)
 # print(plaintext)
-from blowfish import Blowfish, to_bits
+from blowfish import Blowfish
 
-pt = "Test encryption 12345."
+pt = "Nedim"
 
-blowfish = Blowfish("key", pt)
+print('The plaintext is: {}'.format(pt))
+
+blowfish = Blowfish("dsadasdasda", pt)
 ct = blowfish.encrypt(pt)
-print(ct)
+print('The ciphertext is: {}'.format(ct))
 pt = blowfish.decrypt(ct)
-print(pt)
+print('The decrypted ciphertext is: {}'.format(pt))
